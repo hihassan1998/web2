@@ -21,8 +21,8 @@
         <label for="searchWord">Sökord:</label><br>
         <input type="text" id="searchWord" name="searchWord"><br>
         <button type="submit">Skicka</button>
-    </form>
-    <?php
+        <br><br>
+        <?php
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $words = explode(" ", $_POST['words'] ?? '');
@@ -50,6 +50,8 @@
         }
     }
     ?>
+    </form>
+    
 </div>
 <?php
 
