@@ -1,6 +1,6 @@
-<?php 
+<?php
 // page title
-$title = "Sida 3"; 
+$title = "Sida 3";
 include '../../includes/header.php';
 
 
@@ -51,10 +51,11 @@ $area = null;
         <br>
 
         <?php
+        // Check if the form has been submitted using POST method
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $length = isset($_POST['length']) ? (float)$_POST['length'] : 0;
             $width = isset($_POST['width']) ? (float)$_POST['width'] : 0;
-
+            // Output theerror message to user
             if ($length > 0 && $width > 0) {
                 list($circumference, $area) = calculateCircumference($length, $width);
             } else {
@@ -62,9 +63,10 @@ $area = null;
             }
         }
         ?>
+        <?php
+        // Output the results if the circumference and area was calculated
 
-
-        <?php if ($circumference !== null && $area !== null): ?>
+        if ($circumference !== null && $area !== null): ?>
             <hr>
             <h2>Resultat:</h2>
             <p>Inmatat Längd: <?= $length ?> cm</p>

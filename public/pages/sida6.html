@@ -32,20 +32,23 @@
 
         <h1>Välkommen till Sida 6 (HTML Formulär)</h1>
         <br>
+        <!--Explanation about the page content -->
         <p>Denna sida innehåller två formulär med olika metoder:</p>
         <br>
         <hr><br>
         <p>
-            <strong>Första formuläret (GET):</strong>  <br>Används för att skicka data via URL:en, där du kan se
+            <strong>Första formuläret (GET):</strong> <br>Används för att skicka data via URL:en, där du kan se
             informationen i webbläsarens adressfält.
             <br>
-            <strong>Andra formuläret (POST):</strong> <br> Används för att skicka data utan att visa det i URL:en, vilket gör
+            <strong>Andra formuläret (POST):</strong> <br> Används för att skicka data utan att visa det i URL:en,
+            vilket gör
             det mer lämpligt för känslig information.
         </p>
 
         <br>
         <br>
         <hr>
+        <!-- GET method form -->
         <h3>Formulär med GET-metod:</h3>
         <form action="sida6.php" method="get">
             <label for="name">Namn:</label>
@@ -59,14 +62,14 @@
 
 
         <hr>
-
+        <!-- POST method form -->
         <h3>Formulär med POST-metod:</h3>
         <form action="sida6.php" method="post">
             <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name1" name="name" required><br>
 
             <label for="phone">Telefonnummer:</label>
-            <input type="text" id="phone" name="phone" required><br>
+            <input type="text" id="phone1" name="phone" required><br>
 
             <button type="submit">Skicka med POST</button>
         </form>
@@ -75,9 +78,9 @@
 
 
     </div>
-
+    <!-- Linking to an external JavaScript file for functionality of toggle menu -->
     <script src="../../includes/script.js"></script>
-
+    <!-- Footer with university and course details -->
     <footer style="text-align: center; margin-top: 20px;">
         Luleå tekniska universitet | Webbutveckling II - Skriptspråk och databaser | <b>hashus-9</b> | 2025
     </footer>

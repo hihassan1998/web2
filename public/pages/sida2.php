@@ -30,18 +30,23 @@ include '../../includes/header.php';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $farmAnimals = [
+            // Create an array with the entered animal names (using POST values or empty strings as default)
             $_POST['animal1'] ?? '',
             $_POST['animal2'] ?? '',
             $_POST['animal3'] ?? ''
         ];
-
+        // Output the farm animals array in a readable format
         $output = print_r($farmAnimals, true);
         echo '<div class="print-r-box cont"><code>' . $output . '</code></div>';
 
+        // Change the third animal in the array to "Struts"
+
         $farmAnimals[2] = "Struts";
+        // Add a new animal "Alpacka" to the end of the array
+
         $farmAnimals[] = "Alpacka";
         echo "Andra djuret i början är: " . $farmAnimals[1];
-
+        // Output the farm animals array in a readable format
         array_shift($farmAnimals);
         $output = print_r($farmAnimals, true);
         echo '<div class="print-r-box cont"><code>' . $output . '</code></div>';

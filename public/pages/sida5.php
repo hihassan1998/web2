@@ -14,7 +14,10 @@ include '../../includes/header.php';
     <br>
     <hr>
     <br>
+    <!-- (Form used for ease in styling of container and) displaying server-related information -->
     <h2>Serverinformation</h2>
+
+        <!-- Server information section -->
     <form class='cont'>
         <!-- <hr> -->
         <p><b>Servernamn:</b> <?= $_SERVER['SERVER_NAME'] ?></p>

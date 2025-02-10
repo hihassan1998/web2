@@ -22,6 +22,8 @@ include '../../includes/header.php';
     if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['name']) && isset($_GET['phone'])):
         $name = htmlspecialchars($_GET['name']);
         $phone = htmlspecialchars($_GET['phone']);
+        // Output the results to the screen of the user
+
         echo "<h2>GET Resultat:</h2>";
         echo "<p><b>Namn:</b> $name</p>";
         echo "<p><b>Telefonnummer:</b> $phone</p>";
@@ -31,6 +33,7 @@ include '../../includes/header.php';
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name']) && isset($_POST['phone'])):
         $name = htmlspecialchars($_POST['name']);
         $phone = htmlspecialchars($_POST['phone']);
+        // Output the results to the screen of the user
         echo "<h2>POST Resultat:</h2>";
         echo "<p><b>Namn:</b> $name</p>";
         echo "<p><b>Telefonnummer:</b> $phone</p>";
