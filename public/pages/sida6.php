@@ -1,16 +1,40 @@
 <?php include '../../includes/header.php' ?>
 
 <head>
-    <title>Sida 1</title>
+    <title>Sida 6 - Formulär Resultat</title>
 </head>
 
-<div class="main-content">
+<div class="main-content center-content">
 
-    <h1>Välkommen till Sida 1</h1>
-    <a href="sida6.html">Sida 6 HTML-sidan</a>
+    <h1>Välkommen till Sida 6 (Formulär Resultat)</h1>
+    <p>Här ser du informationen från de två olika formulären, som skickades med GET och POST-metod.</p>
+    <br>
+    <hr>
+    <a href="sida6.html">Länk till: Sida 6 - HTML Formulär</a>
+    <hr>
+    <br>
 
-    <p>Denna sida beskriver hur man inkluderar en footer och navigeringsmeny med PHP.</p>
-    <p>Vi använder PHP för att skapa dynamiskt innehåll och för att inkludera gemensamma element.</p>
+    <?php
+    echo "<pre class='cont'>";
+    // Check if data was sent via GET method and print on page
+    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['name']) && isset($_GET['phone'])):
+        $name = htmlspecialchars($_GET['name']);
+        $phone = htmlspecialchars($_GET['phone']);
+        echo "<h2>GET Resultat:</h2>";
+        echo "<p><b>Namn:</b> $name</p>";
+        echo "<p><b>Telefonnummer:</b> $phone</p>";
+    endif;
+
+    // Check if data was sent via POST method and print on page
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name']) && isset($_POST['phone'])):
+        $name = htmlspecialchars($_POST['name']);
+        $phone = htmlspecialchars($_POST['phone']);
+        echo "<h2>POST Resultat:</h2>";
+        echo "<p><b>Namn:</b> $name</p>";
+        echo "<p><b>Telefonnummer:</b> $phone</p>";
+    endif;
+    echo "</pre>";
+    ?>
 
 </div>
 <?php include '../../includes/footer.php' ?>

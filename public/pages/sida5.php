@@ -17,10 +17,10 @@
         <hr>
         <br>
         <h2>Serverinformation</h2>
-        <form>
+        <form class='cont'>
             <!-- <hr> -->
             <p><b>Servernamn:</b> <?= $_SERVER['SERVER_NAME'] ?></p>
-            <p><b>Din IP-adress:</b> <?= $_SERVER['REMOTE_ADDR'] ?></p>
+            <p><b>IP-adress:</b> <?= $_SERVER['REMOTE_ADDR'] ?></p>
             <p><b>Filnamn:</b> <?= $_SERVER['SCRIPT_NAME'] ?></p>
             <p><b>Port:</b> <?= $_SERVER['SERVER_PORT'] ?></p>
             <p><b>HTTP-metod:</b> <?= $_SERVER['REQUEST_METHOD'] ?></p>

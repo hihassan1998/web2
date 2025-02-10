@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sida 6</title>
+    <title>Sida 6 - HTML Formulär</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -23,21 +23,63 @@
             <li><a class="nav-btn" href="sida3.php">Sida 3</a></li>
             <li><a class="nav-btn" href="sida4.php">Sida 4</a></li>
             <li><a class="nav-btn" href="sida5.php">Sida 5</a></li>
-            <li><a class="nav-btn" href="sida6.php">Sida 6</a></li>
+            <li><a class="nav-btn" href="sida6.html">Sida 6</a></li>
         </ul>
     </nav>
 
 
-    <div class="main-content">
+    <div class="main-content center-content">
 
-        <h1>Välkommen till Sida 6</h1>
-        <p>Denna sida är statisk HTML och visar enkel styling och layout.</p>
+        <h1>Välkommen till Sida 6 (HTML Formulär)</h1>
+        <br>
+        <p>Denna sida innehåller två formulär med olika metoder:</p>
+        <br>
+        <hr><br>
+        <p>
+            <strong>Första formuläret (GET):</strong>  <br>Används för att skicka data via URL:en, där du kan se
+            informationen i webbläsarens adressfält.
+            <br>
+            <strong>Andra formuläret (POST):</strong> <br> Används för att skicka data utan att visa det i URL:en, vilket gör
+            det mer lämpligt för känslig information.
+        </p>
+
+        <br>
+        <br>
+        <hr>
+        <h3>Formulär med GET-metod:</h3>
+        <form action="sida6.php" method="get">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <button type="submit">Skicka med GET</button>
+        </form>
+
+
+        <hr>
+
+        <h3>Formulär med POST-metod:</h3>
+        <form action="sida6.php" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <button type="submit">Skicka med POST</button>
+        </form>
+
+
+
+
     </div>
 
     <script src="../../includes/script.js"></script>
 
     <footer style="text-align: center; margin-top: 20px;">
-        Luleå tekniska universitet | Webbutveckling II - Skriptspråk och databaser | <b>hihassan1998</b> | 2025
+        Luleå tekniska universitet | Webbutveckling II - Skriptspråk och databaser | <b>hashus-9</b> | 2025
     </footer>
 
 
