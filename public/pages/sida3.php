@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="sv">
+<?php include '../../includes/header.php';
+
+?>
+
 <head>
-    <meta charset="UTF-8">
     <title>Sida 3</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<?php include '../../includes/menu.php' ?>
+
+<div class="main-content center-content">
 
     <h1>Välkommen till Sida 3</h1>
     <p>Denna sida demonstrerar loopar och villkorssatser i PHP.</p>
+    <p>Denna sida låter användaren mata in en lista av ord och ett sökord. Genom att använda loopar och villkorssatser i PHP analyseras inmatningen för att hitta och räkna förekomsten av sökordet i listan. Resultatet visar på vilka positioner ordet förekommer och hur många gånger det hittades.</p>
+
+    <br>
+    <hr>
+    <br>
     <form method="post">
         <label for="words">Ange ord (separera med mellanslag):</label><br>
         <input type="text" id="words" name="words"><br>
@@ -18,11 +23,12 @@
         <button type="submit">Skicka</button>
     </form>
     <?php
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $words = explode(" ", $_POST['words'] ?? '');
         $searchWord = $_POST['searchWord'] ?? '';
 
-        echo "<pre>";
+        echo "<pre class='cont'>";
         print_r($words);
         echo "</pre>";
 
@@ -34,14 +40,18 @@
         }
 
         if (!empty($positions)) {
+
+            echo "<h2>PHP Resultat:</h2>";
             echo "Ordet '{$searchWord}' finns på plats: " . implode(", ", $positions) . "<br>";
             echo "Ordet '{$searchWord}' hittades " . count($positions) . " gånger.";
+
         } else {
             echo "Ordet '{$searchWord}' hittades inte.";
         }
     }
     ?>
-    <?php include '../../includes/footer.php' ?>
+</div>
+<?php
 
-</body>
-</html>
+?>
+<?php include '../../includes/footer.php' ?>

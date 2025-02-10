@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="sv">
+<?php include '../../includes/header.php' ?>
+
 <head>
-    <meta charset="UTF-8">
     <title>Sida 5</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<?php include '../../includes/menu.php' ?>
 
-    <h1>Välkommen till Sida 5</h1>
-    <p>Denna sida demonstrerar användningen av funktioner i PHP.</p>
+    <div class="main-content">
 
-<?php include '../../includes/footer.php' ?>
+        <h1>Välkommen till Sida 5</h1>
+        <p>Denna sida demonstrerar användningen av funktioner i PHP.</p>
 
-</body>
-</html>
+    </div>
+
+    <?php include '../../includes/footer.php' ?>
