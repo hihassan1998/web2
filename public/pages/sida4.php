@@ -31,8 +31,8 @@ $area = null;
 <div class="main-content center-content">
 
     <h1>Välkommen till Sida 4</h1>
-    <p>Användaren kan mata in värden i formuläret och trycka på "Beräkna" för att se svaret på HTML-sidan, beräknat på serversidan.</p>
     <p>Denna sida beräknar en rektangels area med funktionen <code>calculateArea()</code> och omkretsen med <code>calculateCircumference()</code>.</p>
+    <p>Användaren kan mata in värden i formuläret och trycka på "Beräkna" för att se svaret på HTML-sidan, beräknat på serversidan.</p>
     <p>Om ogiltiga värden, såsom 0 eller negativa tal, matas in, visas ett felmeddelande som uppmanar användaren att ange giltiga värden.</p>
 
     <br>

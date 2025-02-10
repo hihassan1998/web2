@@ -6,10 +6,25 @@
 
 <body>
 
-    <div class="main-content">
+    <div class="main-content center-content">
 
         <h1>Välkommen till Sida 5</h1>
-        <p>Denna sida demonstrerar användningen av funktioner i PHP.</p>
+        <br>
+        <p>Denna sida presenterar information om servernamn, användarens IP-adress, filnamnet på PHP-sidan, portnummer och HTTP-metoden som använts.</p>
+        <br>
+        <!-- <hr> -->
+        <br>
+        <hr>
+        <br>
+        <h2>Serverinformation</h2>
+        <form>
+            <!-- <hr> -->
+            <p><b>Servernamn:</b> <?= $_SERVER['SERVER_NAME'] ?></p>
+            <p><b>Din IP-adress:</b> <?= $_SERVER['REMOTE_ADDR'] ?></p>
+            <p><b>Filnamn:</b> <?= $_SERVER['SCRIPT_NAME'] ?></p>
+            <p><b>Port:</b> <?= $_SERVER['SERVER_PORT'] ?></p>
+            <p><b>HTTP-metod:</b> <?= $_SERVER['REQUEST_METHOD'] ?></p>
+        </form>
 
     </div>
 

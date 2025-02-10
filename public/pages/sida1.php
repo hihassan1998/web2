@@ -1,6 +1,5 @@
 <!-- Including the header.php to include menu bar and responzive meta data -->
-<?php include '../../includes/header.php';
-?>
+<?php include '../../includes/header.php'; ?>
 
 <!-- page title -->
 

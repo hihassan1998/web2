@@ -143,6 +143,7 @@ form input::placeholder {
 
 /** Content stylings starts */
 .main-content {
+    margin-top: 99px;
     flex: 1;
     padding: 20px;
 }
