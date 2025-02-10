@@ -1,11 +1,13 @@
 <!-- Including the header.php to include menu bar and responzive meta data -->
-<?php include '../../includes/header.php'; ?>
+<?php 
+// page title
+$title = "Sida 1"; 
+include '../../includes/header.php';
+?>
 
-<!-- page title -->
 
-<head>
-    <title>Sida 1</title>
-</head>
+
+
 <!-- main content styled to take most vh of the page with the main content -->
 
 <div class="main-content center-content">

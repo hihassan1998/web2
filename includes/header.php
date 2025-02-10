@@ -10,6 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../../public/img/logo/hassan_faviconW.png" type="image/png">
+    <title> Labb 1 | <?= $title ?></title>
+
 
 </head>
 

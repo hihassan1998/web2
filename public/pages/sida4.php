@@ -1,4 +1,8 @@
-<?php include '../../includes/header.php';
+<?php 
+// page title
+$title = "Sida 3"; 
+include '../../includes/header.php';
+
 
 // Function which calculates the area of shape
 function calculateArea($length, $width)
@@ -22,10 +26,6 @@ $area = null;
 
 
 ?>
-
-<head>
-    <title>Sida 4</title>
-</head>
 
 
 <div class="main-content center-content">

@@ -1,10 +1,10 @@
-<?php include '../../includes/header.php';
+<?php
+// page title
+$title = "Sida 2";
+include '../../includes/header.php';
 ?>
 
-<head>
-    <title>Sida 2</title>
 
-</head>
 
 
 <div class="main-content center-content">

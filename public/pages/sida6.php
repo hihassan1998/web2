@@ -1,8 +1,10 @@
-<?php include '../../includes/header.php' ?>
+<?php
+// page title
+$title = "Sida 6 - Formulär Resultat";
+include '../../includes/header.php';
 
-<head>
-    <title>Sida 6 - Formulär Resultat</title>
-</head>
+?>
+
 
 <div class="main-content center-content">
 
